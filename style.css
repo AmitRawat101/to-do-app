@@ -1,0 +1,108 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.card{
+  background-color: black;
+  width: 100%;
+  border-radius: 0;
+}
+
+.search input[type="text"] {
+  height: 50px;
+  font-size: 16px;
+  margin-left: 114px; /* Add margin-right to create space between input and button */
+  border-radius: 6px;
+  
+
+}
+
+.search button {
+  height: 50px;
+  font-size: 16px;
+  margin-left: 25px; /* Add margin-left to create space between input and button */
+  margin-bottom:14px;
+  width: 80px;
+  border-radius: 6px;
+  background-color: green;
+}
+
+.container1 h1{
+  margin-left:35vw;
+}
+
+.container1 {
+  height: calc(100vh - 130px); /* Adjusted height for container1 */
+  width: 100%;
+}
+.temprature {
+  width: 700px;
+  height: 100px;
+  padding-left: 316px;
+  font-family: 'Lato', sans-serif;
+  font-size: 30px;
+}
+.temprature::after {
+  content: ''; /* Adding a pseudo-element */
+  margin-left: 10px; /* Adjust spacing as needed */
+}
+ .text-center{
+  margin-top: 5rem;
+ }
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding-right: 14rem;
+  height: 50px; /* Adjusted height for the footer */
+}
+.container1{
+  display: none;
+}
+.container2 {
+  position: absolute;
+  bottom: 8.9rem;
+  left: 7rem;
+  width: calc(100% - 240px);
+  height: calc(100% - 250px);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.location {
+  margin-top: 10px;
+  width: 500px;
+  height: 100px;
+  font-family: 'Protest Strike', sans-serif;
+  font-size: 50px;
+}
+
+.row {
+  font-family: 'Lato', sans-serif;
+  font-size: 25px;
+  margin-top: 42px;
+}
+
+.search {
+  margin-top: 10px;
+}
+
+.search input[type="text"],
+.search button {
+  height: 30px;
+  font-size: 16px;
+}
+.error{
+  font-family: 'Lato', sans-serif;
+  font-size: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+margin-left: 36rem;
+margin-top:15rem ;
+  display: none;
+}
