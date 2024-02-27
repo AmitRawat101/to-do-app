@@ -1,108 +1,110 @@
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-.card{
-  background-color: black;
-  width: 100%;
-  border-radius: 0;
+
+body {
+    background-color: darkblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.search input[type="text"] {
-  height: 50px;
-  font-size: 16px;
-  margin-left: 114px; /* Add margin-right to create space between input and button */
-  border-radius: 6px;
-  
-
+.container {
+    position: relative;
+    width: 60vw;
+    height: 80vh;
+    background-color: rgba(37, 148, 245, 0.5);
+    color: white;
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header{
+position: absolute;
+top: 1.9rem;
+}
+.container h1 {
+    width: auto;
+    height: 30px;
+    margin: 0;
 }
 
-.search button {
-  height: 50px;
-  font-size: 16px;
-  margin-left: 25px; /* Add margin-left to create space between input and button */
-  margin-bottom:14px;
-  width: 80px;
-  border-radius: 6px;
-  background-color: green;
+.time {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 40px;
+    font-size: 1.7rem;
 }
 
-.container1 h1{
-  margin-left:35vw;
+.task {
+    position: absolute;
+    top: 7rem;
+    left: 18rem;
 }
 
+.task input {
+    width: 240px;
+    height: 30px;
+    font-size: 15px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.task button {
+
+    margin-left: 8px;
+    width: 40px;
+    height: 35px;
+    font-size: 20px;
+    border-radius: 0.4rem;
+    background-color: red;
+    color: antiquewhite;
+    cursor: pointer;
+}
 .container1 {
-  height: calc(100vh - 130px); /* Adjusted height for container1 */
-  width: 100%;
+    position: relative; 
+    margin-top: 6rem;
+    width: 35vw;
+    height: 50vh; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
 }
-.temprature {
-  width: 700px;
-  height: 100px;
-  padding-left: 316px;
-  font-family: 'Lato', sans-serif;
-  font-size: 30px;
+.box{
+    width: 30vw;
+    height: 45px;
+    padding: 10px;
+    margin-bottom:10px;
+display: flex;
+align-items: center;
+font-size: 20px;
+border-radius: 8px;
+background-color: rgb(120, 34, 34) ;
+color: white;
 }
-.temprature::after {
-  content: ''; /* Adding a pseudo-element */
-  margin-left: 10px; /* Adjust spacing as needed */
+.delete{
+    position: absolute;
+    height: 28px;
+    left: 26rem;
+    width: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
 }
- .text-center{
-  margin-top: 5rem;
- }
-footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  padding-right: 14rem;
-  height: 50px; /* Adjusted height for the footer */
+.box .checkbox{
+    left: 29rem;
+    position: absolute;
+    height: 27px;
+    width: 30px;
 }
-.container1{
-  display: none;
-}
-.container2 {
-  position: absolute;
-  bottom: 8.9rem;
-  left: 7rem;
-  width: calc(100% - 240px);
-  height: calc(100% - 250px);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  padding: 20px;
-  box-sizing: border-box;
-  overflow-y: auto;
-}
-
-.location {
-  margin-top: 10px;
-  width: 500px;
-  height: 100px;
-  font-family: 'Protest Strike', sans-serif;
-  font-size: 50px;
-}
-
-.row {
-  font-family: 'Lato', sans-serif;
-  font-size: 25px;
-  margin-top: 42px;
-}
-
-.search {
-  margin-top: 10px;
-}
-
-.search input[type="text"],
-.search button {
-  height: 30px;
-  font-size: 16px;
-}
-.error{
-  font-family: 'Lato', sans-serif;
-  font-size: 45px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-margin-left: 36rem;
-margin-top:15rem ;
-  display: none;
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        height: 0;
+        padding: 0;
+        margin: 0;
+    }
 }
